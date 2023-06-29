@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"id":"2e8fdfdf21952821","x":-202,"y":80,"width":250,"height":160,"type":"text","text":"Integral domain\n*  no zero divisors\n* commutative\n* has 1"},
+		{"id":"ee7162948cd18471","x":-202,"y":-235,"width":250,"height":151,"type":"text","text":"Division ring\n* every nonzero *x* has an inverse\n* *field* if commutative"},
+		{"id":"547d48b7f92b6e4b","x":-1480,"y":-250,"width":555,"height":360,"type":"text","text":"Simple properties:\n1. 0a = a0 = 0\n2. (-a)b = a(-b) = -(ab)\n3. (-a)(-b) = ab\n4. R has 1 => 1 is unique and -a = (-1)a\n   \nAdvanced properties:\n\n5. *not* zero divisor => cancellation property \n6. Every nonzero element of commutative ring that is not a zero divisor has a mult-inverse in some larger ring\n7. "},
+		{"id":"b4beb04a23e91013","x":260,"y":-40,"width":347,"height":200,"type":"text","text":"For nonzero **p(x)** and **q(x)** in **R\\[x\\]**  (polynomial with \"integral\" coefs):\n1. deg pq = deg p + deg q\n2. units of R\\[x\\] are units of R only\n3. R\\[x\\] is integral domain"},
+		{"id":"e3c87288e77e578d","x":260,"y":210,"width":250,"height":60,"type":"text","text":"Any finite integral domain is a field"},
+		{"id":"b3aaf4b0fe583c23","x":260,"y":320,"width":361,"height":129,"type":"text","text":"Cancellation property for any a, b, c:\n* ab = ac => a = 0 or b = c "},
+		{"id":"06ddf268d5639bbd","x":184,"y":-189,"width":250,"height":60,"type":"text","text":"Every finite division ring is commutative, i.e. a field"},
+		{"id":"5060f6ebe8169488","x":-277,"y":500,"width":400,"height":177,"type":"text","text":"Notable examples:\n1. Quadratic field Q\\[D\\]\n$$\na + b \\sqrt{D} \\:|\\: a,b \\in Q  \\: and \\: D \\: is \\: squarefree \\: integer\n$$\n2.\n"},
+		{"type":"text","text":"Ring\n1. abelian for +\n2. associative for *\n3. distributive from left and right *","id":"2f5ef207faf452e3","x":-734,"y":-159,"width":220,"height":180},
+		{"id":"f8294ff4f995bde9","x":-749,"y":160,"width":250,"height":123,"type":"text","text":"Subring:\n1. Subgroup under +\n2. Closed under *"},
+		{"id":"9173bc44a7ce8d6d","x":-840,"y":389,"width":432,"height":400,"type":"text","text":"Notable examples:\n1. $$\nZ[\\sqrt{D}]\n $$\n2. $$\nZ[(1 + \\sqrt{D})/2]\n $$ \n when D = 1 mod 4\n \n \n 3. Ring of integers inside quadratic field\n      *O* = Z\\[w\\] = {a + bw}\n      w = sqrt(D)   when    D = 2,3 mod 4\n      w = 1 + sqrt(D)/2  when D = 1 mod 4\n \n"},
+		{"id":"4b3393d7d80bd0d6","x":-1442,"y":351,"width":250,"height":109,"type":"text","text":"Ring homomorphism:\n1. f(a + b)  = f(a) + f b)\n2. f(ab) = f(a)f(b)"},
+		{"id":"771ce7691ba0f114","x":-1442,"y":540,"width":250,"height":98,"type":"text","text":"1. Ker f is a subring\n2. Im f is a subring\n3. a \\* Ker f = Ker f"},
+		{"id":"03d942be3208b083","x":-1452,"y":740,"width":250,"height":165,"type":"text","text":"Quotient ring f/Ker f:\n* fibers have a ring structure\n* isomorphic to Im f"},
+		{"id":"da006d3ea86dca99","x":-1480,"y":1120,"width":250,"height":166,"type":"text","text":"Notion of ideal:\n*  subring which is closed under left/right/both multiplication"}
+	],
+	"edges":[
+		{"id":"e6b6286b3fab9da6","fromNode":"2f5ef207faf452e3","fromSide":"right","toNode":"ee7162948cd18471","toSide":"left","color":"5"},
+		{"id":"05bba1018869528c","fromNode":"2f5ef207faf452e3","fromSide":"left","toNode":"547d48b7f92b6e4b","toSide":"right","color":"4"},
+		{"id":"2883f3df71155fd8","fromNode":"2f5ef207faf452e3","fromSide":"right","toNode":"2e8fdfdf21952821","toSide":"left","color":"5"},
+		{"id":"c89837a38a291375","fromNode":"2e8fdfdf21952821","fromSide":"right","toNode":"b3aaf4b0fe583c23","toSide":"left","color":"4"},
+		{"id":"bad34823b7cf56df","fromNode":"2e8fdfdf21952821","fromSide":"right","toNode":"e3c87288e77e578d","toSide":"left","color":"4"},
+		{"id":"0ec4aa4c8a7cc857","fromNode":"ee7162948cd18471","fromSide":"right","toNode":"06ddf268d5639bbd","toSide":"left","color":"4"},
+		{"id":"078a30e2bed7f164","fromNode":"2f5ef207faf452e3","fromSide":"bottom","toNode":"f8294ff4f995bde9","toSide":"top"},
+		{"id":"6d80faaf57019fb9","fromNode":"2e8fdfdf21952821","fromSide":"right","toNode":"b4beb04a23e91013","toSide":"left","color":"4"},
+		{"id":"b3e70f1e8bd0e545","fromNode":"2e8fdfdf21952821","fromSide":"bottom","toNode":"5060f6ebe8169488","toSide":"top","color":"6"},
+		{"id":"5dffa43d56372472","fromNode":"f8294ff4f995bde9","fromSide":"bottom","toNode":"9173bc44a7ce8d6d","toSide":"top","color":"6"},
+		{"id":"732ec2e18a47039e","fromNode":"5060f6ebe8169488","fromSide":"left","toNode":"9173bc44a7ce8d6d","toSide":"right"},
+		{"id":"acd11232657e9acd","fromNode":"2f5ef207faf452e3","fromSide":"bottom","toNode":"4b3393d7d80bd0d6","toSide":"top","color":"5"},
+		{"id":"44f3ff6d861ecd87","fromNode":"4b3393d7d80bd0d6","fromSide":"bottom","toNode":"771ce7691ba0f114","toSide":"top","color":"4"},
+		{"id":"18b05925092282ff","fromNode":"03d942be3208b083","fromSide":"bottom","toNode":"da006d3ea86dca99","toSide":"top","color":"5"},
+		{"id":"52d0b4ab67bb5a50","fromNode":"771ce7691ba0f114","fromSide":"bottom","toNode":"03d942be3208b083","toSide":"top","color":"5"}
+	]
+}
