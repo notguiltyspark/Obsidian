@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"type":"text","text":"Проверяем команду от контекстного меню элемента дерева\nCase MENU_EVENT_A:\n-> знаем какой тип лежит по void*\n-> обрабатываем логику в зависимости от","id":"379d5265027f04b4","x":-100,"y":20,"width":320,"height":120},
+		{"type":"text","text":"Добавляем узлы в дерево:\n_scene->getObjectTree()->addNode(void* RouteInfo)","id":"4b30a99228e9220a","x":-350,"y":-540,"width":250,"height":160},
+		{"type":"text","text":"ObjectTreeWidget : QWidget, GuiTool, ObjectTreeInterface\n* ui-шка с QTreeWidget  +  обработка GUI-событий\n* add/update/remove Node + void\\* хранилища индекс-данные и наоборот\n* customContextMenuRequestedSlot   -> qt-шное меню на основе \"сборочного\" меню \n* menuItemCheckedSlot -> вытаскиваем item и создаем EventData с типом события из menuItem и c void-неопределенными данными","id":"9d4b364932552e64","x":40,"y":-600,"width":610,"height":280},
+		{"type":"text","text":"RouteManager","id":"eea58068a26470c4","x":-350,"y":-140,"width":250,"height":50}
+	],
+	"edges":[
+		{"id":"936bc942b9b7fbe8","fromNode":"eea58068a26470c4","fromSide":"bottom","toNode":"379d5265027f04b4","toSide":"left","label":"userEventExecute"},
+		{"id":"5ea05d7fdfe73ba2","fromNode":"eea58068a26470c4","fromSide":"top","toNode":"4b30a99228e9220a","toSide":"bottom","label":"loadCameraRoutes"},
+		{"id":"1ddda1ccc4b6ef3f","fromNode":"4b30a99228e9220a","fromSide":"right","toNode":"9d4b364932552e64","toSide":"left"},
+		{"id":"ae01c7d87bf60240","fromNode":"9d4b364932552e64","fromSide":"bottom","toNode":"379d5265027f04b4","toSide":"right","label":"Создали событие с типом, соответствующим пункту меню и поставили в traverse-очередь"}
+	]
+}

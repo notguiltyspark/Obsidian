@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Untitled.canvas",
+                "file": "gis_3d/ObjectTree.canvas",
                 "viewState": {
-                  "x": -1305.60438394429,
-                  "y": 771.1200875942781,
-                  "zoom": -0.6666666666666665
+                  "x": 192.5,
+                  "y": -303,
+                  "zoom": 0
                 }
               }
             }
@@ -84,8 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "18a074066d8d571a",
@@ -101,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.canvas",
+                "file": "gis_3d/ObjectTree.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.canvas",
+                "file": "gis_3d/ObjectTree.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.canvas"
+                "file": "gis_3d/ObjectTree.canvas"
               }
             }
           }
@@ -165,10 +164,12 @@
   },
   "active": "1df5e879c562bade",
   "lastOpenFiles": [
-    "dsfsdf.md",
     "2023-06-29.md",
+    "gis_3d/ObjectTree.canvas",
+    "gis_3d",
     "Untitled 2.canvas",
-    "Untitled 1.canvas",
-    "Untitled.canvas"
+    "Ring theory.canvas",
+    "Untitled 3.canvas",
+    "dsfsdf.md"
   ]
 }
